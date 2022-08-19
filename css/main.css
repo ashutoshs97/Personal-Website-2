@@ -522,7 +522,7 @@ header {
 }
 
 .aboutus .btn-primary {
-	border: 2px solid #746c75;
+	border: 2px solid #372d38 !important;
 	background: none;
 	line-height: 30px;
 	font-size: 12px;
@@ -534,7 +534,8 @@ header {
 }
 
 .aboutus .btn-primary:hover {
-	color: #979497;
+	color: white;
+	background-color: #000;
 }
 
 /*----------------------------------------------------
@@ -1036,14 +1037,15 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 	font-weight: 400;
 	text-align: center;
 	margin: 0px;
-	border: 2px solid #746c75 !important;
+	border: 2px solid #372d38 !important;
 	padding: 0;
 	width: 322px;
 	height: 52px;
 }
 
 .conForm .submitBnt:hover {
-	color: #000;
+	color: white;
+	background-color: #000;
 }
 
 .textGroup {
