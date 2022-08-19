@@ -739,13 +739,12 @@ header {
 .portfolioFilter ul li a:hover {
 	border-color: #cfcfcf;
 	color: #000;
-
+	transform: scale(1.1);
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
 }
 
 .portfolioFilter ul li a.current {
-	border: solid 1px #fff;
 	color: #000;
 }
 
@@ -1199,11 +1198,11 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 	display: inline-block;
 	width: 40px;
 	height: 40px;
-	border: 2px solid #746c75;
+	margin-top: 20px;
 }
 
 .gototop i {
-	color: #817a82;
+	color: #8c9099;
 	line-height: 35px;
 }
 
