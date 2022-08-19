@@ -328,10 +328,16 @@ header {
 
 .navbar.navbar-inverse.navbar-static-top a.closeMenu:hover {
 	background: none;
+	transform: scale(1.1);
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
 }
 
 .isStuck .navbar.navbar-inverse.navbar-static-top a.closeMenu:hover {
 	background: none;
+	transform: scale(1.1);
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
 }
 
 .closeMenu i {
@@ -414,12 +420,14 @@ header {
 .navbar.navbar-inverse.navbar-static-top a:hover {
 	background: none;
 	color: #fff;
+	transform: scale(1.1);
 }
 
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:focus {
 	background: none;
 	color: #fff !important;
+	transform: scale(1.1);
 }
 
 .navbar-inverse .navbar-nav>.active>a:hover {
@@ -506,9 +514,11 @@ header {
 }
 
 .aboutus img {
-	padding: 7px;
+	padding: 1px;
 	display: block;
-	border: 1px solid #bab4bb;
+	border: 2px solid #bbbbbb;
+	margin-left: 50px;
+	width: 70%;
 }
 
 .aboutus .heading p {
@@ -536,6 +546,9 @@ header {
 .aboutus .btn-primary:hover {
 	color: white;
 	background-color: #000;
+	transform: scale(1.1);
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 1s;
 }
 
 /*----------------------------------------------------
@@ -572,6 +585,10 @@ header {
 	-ms-transition-property: width, background-color;
 	-o-transition-property: width, background-color;
 	transition-property: width, background-color;
+}
+
+.skillbar:hover{
+
 }
 
 .skillbar-title {
@@ -656,7 +673,7 @@ header {
 	 8. Protfolio Style
 ------------------------------------------------------*/
 .protfolio {
-	background: #ffffff;
+	background: #e7e7e7;
 	width: 100%;
 	overflow: hidden;
 }
@@ -741,7 +758,7 @@ header {
 	color: #000;
 	transform: scale(1.1);
 	transition-duration: 0.2s;
-	-webkit-transition-duration: 0.2s;
+	-webkit-transition-duration: 0.5s;
 }
 
 .portfolioFilter ul li a.current {
@@ -961,7 +978,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 ------------------------------------------------------*/
 
 .contact {
-	background: #e7e7e7;
+	background: #fff;
 }
 
 .contact .container {
@@ -970,11 +987,12 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 }
 
 .mapArea {
-	height: 462px;
+	height: 400px;
 	overflow: hidden;
 	width: 100%;
-	margin: 0;
-	background: #3b323c;
+	padding-left: 6%;
+	padding-right: 4%;
+	background: #fff;
 }
 
 .mapArea iframe {
@@ -986,9 +1004,8 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 	max-width: none;
 }
 
-
 .contactDetails {
-	background: #fff;
+	background: #e7e7e7;
 }
 
 .contactDetails .container {
@@ -1045,6 +1062,9 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 .conForm .submitBnt:hover {
 	color: white;
 	background-color: #000;
+	transform: scale(1.1);
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 1s;
 }
 
 .textGroup {
@@ -1135,7 +1155,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 	 10. Footer Style
 ------------------------------------------------------*/
 .footer {
-	background: #e7e7e7;
+	background: #fff
 }
 
 .footer .container {
@@ -1165,6 +1185,9 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 
 .footer ul li:hover {
 	background: #1d1d1d;
+	transform: scale(1.1);
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 1s;
 }
 
 .footer ul li:hover a {
@@ -1240,17 +1263,69 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 	text-align: center;
 }
 
-.vg-page{
-	background: #e7e7e7;
+.vg-page {
+	background: #ffffff;
 	padding-top: 150px;
 	padding-bottom: 150px;
 }
 
+.animated:hover {
+	transform: scale(1.1);
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 1s;
+}
+
+.page-service {
+	background: #e7e7e7;
+}
+
+/*Typing Text*/
 
 
+:root {
+	--bg-color: #2e3d4b;
+	--text-color: #ffffff;
+}
+
+.typewriter {
+	font-size: 1.2rem;
+	color: #fff;
+	position: relative;
+	margin: 0;
+	top: 50%;
+}
+
+.typewriter span {
+	color: var(--text-color);
+	padding: 1px;
+	border-right: solid var(--text-color) 2px;
+	animation: cursor 1s ease-in-out infinite;
+}
+
+@keyframes cursor {
+	from {
+		border-color: var(--text-color);
+	}
+
+	to {
+		border-color: transparent;
+	}
+}
+
+@media (max-width: 576px) {
+	.typewriter {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.typewriter {
+		font-size: 1.2rem;
+	}
+}
 
 /*---------------------------------------------------------------------------------
-	 11. Responsive style
+	 Responsive style
 -------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 1200px) {
@@ -1313,9 +1388,6 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 	}
 }
 
-
-
-
 @media screen and (max-width: 810px) {
 
 	.centerskills {
@@ -1347,7 +1419,6 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 
 
 }
-
 
 @media screen and (min-width: 768px) {
 
@@ -1705,50 +1776,5 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 		left: 0px;
 		top: 0px;
 
-	}
-}
-
-/*Typing Text*/
-
-
-:root {
-	--bg-color: #2e3d4b;
-	--text-color: #ffffff;
-}
-
-.typewriter {
-	font-size: 1.2rem;
-	color: #fff;
-	position: relative;
-	margin: 0;
-	top: 50%;
-}
-
-.typewriter span {
-	color: var(--text-color);
-	padding: 1px;
-	border-right: solid var(--text-color) 2px;
-	animation: cursor 1s ease-in-out infinite;
-}
-
-@keyframes cursor {
-	from {
-		border-color: var(--text-color);
-	}
-
-	to {
-		border-color: transparent;
-	}
-}
-
-@media (max-width: 576px) {
-	.typewriter {
-		font-size: 1.2rem;
-	}
-}
-
-@media (max-width: 768px) {
-	.typewriter {
-		font-size: 1.2rem;
 	}
 }
