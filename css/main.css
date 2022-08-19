@@ -522,7 +522,7 @@ header {
 }
 
 .aboutus .btn-primary {
-	border: 2px solid #372d38 !important;
+	border: 2px solid !important;
 	background: none;
 	line-height: 30px;
 	font-size: 12px;
@@ -1037,7 +1037,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 	font-weight: 400;
 	text-align: center;
 	margin: 0px;
-	border: 2px solid #372d38 !important;
+	border: 2px solid !important;
 	padding: 0;
 	width: 322px;
 	height: 52px;
@@ -1250,6 +1250,11 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 
 @media screen and (min-width: 1200px) {
 
+	.photo3 {
+		width: 70%;
+		height: auto;
+	}
+
 	.centerskills {
 		margin-left: 2000px;
 		width: 100%;
@@ -1341,6 +1346,11 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 
 @media screen and (min-width: 768px) {
 
+	.photo3 {
+		width: 100%;
+		height: auto;
+	}
+
 	.centerskills {
 		margin: auto;
 		width: 100%;
@@ -1373,6 +1383,12 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 
 
 @media screen and (max-width: 767px) {
+
+	.photo3 {
+		width: 40%;
+		height: auto;
+		margin: auto;
+	}
 
 	.centerskills {
 		margin: auto;
@@ -1528,6 +1544,10 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 
 @media screen and (max-width: 650px) {
 
+	#photo2 {
+		margin-left: -220px;
+	}
+
 	.centerskills {
 		margin: auto;
 		width: 80%;
@@ -1596,6 +1616,10 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 
 @media screen and (max-width: 480px) {
 
+	#photo2 {
+		margin-left: -120px;
+	}
+
 	.centerskills {
 		margin: auto;
 		width: 80%;
@@ -1619,6 +1643,10 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 
 
 @media screen and (max-width: 400px) {
+
+	#photo2 {
+		margin-left: -160px;
+	}
 
 	.centerskills {
 		margin: auto;
@@ -1679,42 +1707,43 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 
 
 :root {
-  --bg-color: #2e3d4b;
-  --text-color: #ffffff;
+	--bg-color: #2e3d4b;
+	--text-color: #ffffff;
 }
 
 .typewriter {
-  font-size: 1.2rem;
-  color: #fff;
-  position: relative;
-  margin: 0;
-  top: 50%;
+	font-size: 1.2rem;
+	color: #fff;
+	position: relative;
+	margin: 0;
+	top: 50%;
 }
 
 .typewriter span {
-  color: var(--text-color);
-  padding: 1px;
-  border-right: solid var(--text-color) 2px;
-  animation: cursor 1s ease-in-out infinite;
+	color: var(--text-color);
+	padding: 1px;
+	border-right: solid var(--text-color) 2px;
+	animation: cursor 1s ease-in-out infinite;
 }
 
 @keyframes cursor {
-  from {
-    border-color: var(--text-color);
-  }
-  to {
-    border-color: transparent;
-  }
+	from {
+		border-color: var(--text-color);
+	}
+
+	to {
+		border-color: transparent;
+	}
 }
 
 @media (max-width: 576px) {
-  .typewriter {
-    font-size: 1.2rem;
-  }
-}
-@media (max-width: 768px) {
-  .typewriter {
-    font-size: 1.2rem;
-  }
+	.typewriter {
+		font-size: 1.2rem;
+	}
 }
 
+@media (max-width: 768px) {
+	.typewriter {
+		font-size: 1.2rem;
+	}
+}
