@@ -1,9 +1,3 @@
-/*!
- * Bootstrap v4.5.0 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -614,7 +608,7 @@ pre code {
   font-weight: bold;
 }
 
-.subscribe{
+.subscribe {
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -5345,23 +5339,23 @@ input[type="button"].btn-block {
   margin-bottom: 0.75rem;
 }
 
-.education-years:hover{
+.education-years:hover {
   transform: scale(1.2);
 }
 
-.badge:hover{
+.badge:hover {
   transform: scale(1.1);
 }
 
-.hover-icons:hover{
+.hover-icons:hover {
   transform: scale(1.2);
 }
 
-.hoverzoom:hover{
+.hoverzoom:hover {
   transform: scale(1.1);
 }
 
-.btn-theme-outline:hover{
+.btn-theme-outline:hover {
   transform: scale(1.1);
 }
 
@@ -11565,6 +11559,7 @@ a.text-dark:focus {
   from {
     border-color: var(--text-color);
   }
+
   to {
     border-color: transparent;
   }
@@ -11575,9 +11570,9 @@ a.text-dark:focus {
     font-size: 1.2rem;
   }
 }
+
 @media (max-width: 768px) {
   .typewriter {
     font-size: 1.2rem;
   }
 }
-
